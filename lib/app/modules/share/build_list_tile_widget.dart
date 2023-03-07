@@ -1,9 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import '../../routes/app_pages.dart';
-import '../detail_news/controllers/detail_news_controller.dart';
 
 class ListNews extends StatelessWidget {
   const ListNews(
@@ -24,7 +22,7 @@ class ListNews extends StatelessWidget {
         margin: EdgeInsets.all(24),
         width: Get.width * 0.9,
         decoration: BoxDecoration(
-            color: Color(0xFFD9D9D9), borderRadius: BorderRadius.circular(15)),
+            color: Color(0xFFFFFFFF), borderRadius: BorderRadius.circular(15)),
         padding: EdgeInsets.symmetric(vertical: 25, horizontal: 20),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,

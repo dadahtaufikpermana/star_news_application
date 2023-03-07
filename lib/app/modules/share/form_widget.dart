@@ -11,7 +11,7 @@ class FormWidget extends GetView<CreateNewsController> {
       padding: EdgeInsets.all(40),
       child: ListView(
         children: [
-          Text('Judul'),
+          Text('Judul', style: TextStyle(color: Colors.white),),
           const SizedBox(
             height: 16,
           ),
@@ -38,7 +38,7 @@ class FormWidget extends GetView<CreateNewsController> {
           const SizedBox(
             height: 28,
           ),
-          Text('Content Article'),
+          Text('Content Article', style: TextStyle(color: Colors.white),),
           const SizedBox(
             height: 16,
           ),
@@ -75,7 +75,7 @@ class FormWidget extends GetView<CreateNewsController> {
               ),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15.0),
-                color: Color(0xFFFD9D9D9),
+                color: Color(0xFFFFFFFF),
               ),
               child: Center(
                 child: controller.isLoading.value
