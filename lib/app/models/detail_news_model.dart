@@ -4,29 +4,32 @@
 
 import 'dart:convert';
 
-DetailNewsModel detailNewsModelFromJson(String str) => DetailNewsModel.fromJson(json.decode(str));
+DetailNewsModel detailNewsModelFromJson(String str) =>
+    DetailNewsModel.fromJson(json.decode(str));
 
-String detailNewsModelToJson(DetailNewsModel data) => json.encode(data.toJson());
+String detailNewsModelToJson(DetailNewsModel data) =>
+    json.encode(data.toJson());
 
 class DetailNewsModel {
   DetailNewsModel({
-    required this.userId,
-    required this.id,
-    required this.title,
-    required this.body,
+    this.userId,
+    this.id,
+    this.title,
+    this.body,
   });
 
-  int userId;
-  int id;
-  String title;
-  String body;
+  final int? userId;
+  final int? id;
+  final String? title;
+  final String? body;
 
-  factory DetailNewsModel.fromJson(Map<String, dynamic> json) => DetailNewsModel(
-    userId: json["userId"],
-    id: json["id"],
-    title: json["title"],
-    body: json["body"],
-  );
+  factory DetailNewsModel.fromJson(Map<String, dynamic> json) =>
+      DetailNewsModel(
+        userId: json["userId"],
+        id: json["id"],
+        title: json["title"],
+        body: json["body"],
+      );
 
   Map<String, dynamic> toJson() => {
     "userId": userId,

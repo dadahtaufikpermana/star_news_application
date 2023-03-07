@@ -36,12 +36,12 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.DETAIL_NEWS,
-      page: () => const DetailNewsView(),
+      page: () =>  DetailnewsView(),
       binding: DetailNewsBinding(),
     ),
     GetPage(
       name: _Paths.CREATE_NEWS,
-      page: () => const CreateNewsView(),
+      page: () => CreateNewsView(),
       binding: CreateNewsBinding(),
     ),
   ];
